@@ -25,8 +25,6 @@ Template.registerHelper('downvotedClass', function(n, thing) {
 });
 
 Template.registerHelper('summarize', function(content) {
-    console.log("call summarize content is: ");
-    console.log(content);
     var str = content.length > 30 ? content.substr(0, 30) : content;
     return str + '...';
 });

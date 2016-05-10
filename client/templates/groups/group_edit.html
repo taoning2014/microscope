@@ -1,4 +1,17 @@
-<template name="group_create.html">
-	<!-- {{> quickForm collection="Groups" id="insertGroupCreateForm" type="insert"}} -->
-	<p>group_create.html</p>
+<template name="groupEdit">
+  <p>CreatedAt: {{createdAt}}</p>
+  <p>UpdatedAt: {{updatedAt}}</p>
+  {{#autoForm collection="Groups" doc=this id="updateGroupCreateForm" type="update"}}
+    <fieldset>
+      <legend>Update a group</legend>
+      {{> afQuickField name='groupName'}}
+      {{> afQuickField name='discription' rows=6}}
+      {{> afQuickField name='picture'}}
+      {{> afQuickField name='members'}}
+      {{> afQuickField name='isPrivate'}}
+      {{> afQuickField name='isPublic'}}
+      {{> afQuickField name='isFeatured'}}
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Update</button>
+  {{/autoForm}}
 </template>
