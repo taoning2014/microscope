@@ -7,8 +7,9 @@
       <p class="lead">{{summarize discription}}</p>
       <p>
         {{pluralizeArray members "Member"}},
-        created by {{userId}},
+        created by {{userId}}
       </p>
+      {{#if ownGroup}}<a href="{{pathFor 'groupEdit'}}">Edit</a>{{/if}}
     </div>
     <a href="{{pathFor 'groupPage'}}" class="discuss btn btn-default">Details</a>
   </div>
