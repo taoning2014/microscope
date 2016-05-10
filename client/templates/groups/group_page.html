@@ -1,15 +1,14 @@
 <template name="groupPage">
   <div class="post">
-    <a href="#" class="vote btn btn-default {{upvotedClass}}">Join now</a>
-    <a href="#" class="vote btn btn-default {{upvotedClass}}">Leave</a>
     <div class="post-content">
       <h3>{{groupName}}</h3>
-      <p class="lead">{{summarize discription}}</p>
+      <p class="lead">{{discription}}</p>
       <p>
         {{pluralizeArray members "Member"}},
         created by {{userId}},
+        <a href="#" class="vote btn btn-default {{upvotedClass}}">Join now</a>
+        <a href="#" class="vote btn btn-default {{upvotedClass}}">Leave</a>
       </p>
     </div>
-    <a href="{{pathFor 'groupPage'}}" class="discuss btn btn-default">Details</a>
   </div>
 </template>
