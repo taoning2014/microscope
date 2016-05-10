@@ -78,6 +78,7 @@ if (Posts.find().count() === 0) {
     Groups.insert({
       userId: sacha._id,
       groupName: "Test Regular Group: " + i,
+      discription: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.i',
       createdAt: new Date(now - 12 * 3600 * 1000 * i),
       memberCount: 2,
       members: [sacha._id, tom._id],
@@ -91,6 +92,7 @@ if (Posts.find().count() === 0) {
     Groups.insert({
       userId: tom._id,
       groupName: "Test Private Group: " + i,
+      discription: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.i',
       createdAt: new Date(now - 12 * 3600 * 1000 * i),
       memberCount: 1,
       members: [tom._id],
@@ -104,6 +106,7 @@ if (Posts.find().count() === 0) {
     Groups.insert({
       userId: sacha._id,
       groupName: "Test Featured Group: " + i,
+      discription: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.i',
       createdAt: new Date(now - 12 * 3600 * 1000 * i),
       memberCount: 2,
       members: [sacha._id, tom._id],

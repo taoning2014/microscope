@@ -19,3 +19,8 @@ Template.registerHelper('downvotedClass', function(n, thing) {
       return 'disabled';
     }
 });
+
+Template.registerHelper('summarize', function(content) {
+    var str = content.length > 30 ? content.substr(0, 30) : str;
+    return str + '...';
+});
