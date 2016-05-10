@@ -1,11 +1,12 @@
 <template name="postItem">
   <div class="post">
-    <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+    <a href="#" class="vote btn btn-default {{upvotedClass}}">⬆</a>
+    <a href="#" class="vote btn btn-default {{downvotedClass}}">⬇</a>
     <div class="post-content">
       <h3>{{title}}</h3>
       <p class="lead">{{summarize content}}</p>
       <p>
-        {{pluralize votes "Vote"}},
+        {{pluralize upvotes "Upvote"}},{{pluralize downvotes "Downvote"}}
         submitted by {{author}},
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}

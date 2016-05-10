@@ -19,7 +19,8 @@ if (Posts.find().count() === 0) {
     content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 7 * 3600 * 1000),
     commentsCount: 2,
-    upvoters: [], votes: 0
+    upvoters: [], upvotes: 0,
+    downvoters: [], downvotes: 0
   });
   
   Comments.insert({
@@ -45,7 +46,8 @@ if (Posts.find().count() === 0) {
     content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 10 * 3600 * 1000),
     commentsCount: 0,
-    upvoters: [], votes: 0
+    upvoters: [], upvotes: 0,
+    downvoters: [], downvotes: 0
   });
   
   Posts.insert({
@@ -55,7 +57,8 @@ if (Posts.find().count() === 0) {
     content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 12 * 3600 * 1000),
     commentsCount: 0,
-    upvoters: [], votes: 0
+    upvoters: [], upvotes: 0,
+    downvoters: [], downvotes: 0
   });
   
   for (var i = 0; i < 10; i++) {
@@ -66,7 +69,8 @@ if (Posts.find().count() === 0) {
       content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.i',
       submitted: new Date(now - i * 3600 * 1000 + 1),
       commentsCount: 0,
-      upvoters: [], votes: 0
+      upvoters: [], upvotes: 0,
+      downvoters: [], downvotes: 0
     });
   }
 }

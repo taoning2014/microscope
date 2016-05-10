@@ -10,3 +10,12 @@ Template.registerHelper('upvotedClass', function(n, thing) {
       return 'disabled';
     }
 });
+
+Template.registerHelper('downvotedClass', function(n, thing) {
+    var userId = Meteor.userId();
+    if (userId && !_.include(this.downvoters, userId)) {
+      return 'btn-primary downvotable';
+    } else {
+      return 'disabled';
+    }
+});
