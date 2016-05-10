@@ -16,7 +16,7 @@ if (Posts.find().count() === 0) {
     title: 'Introducing Telescope',
     userId: sacha._id,
     author: sacha.profile.name,
-    url: 'http://sachagreif.com/introducing-telescope/',
+    content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 7 * 3600 * 1000),
     commentsCount: 2,
     upvoters: [], votes: 0
@@ -42,7 +42,7 @@ if (Posts.find().count() === 0) {
     title: 'Meteor',
     userId: tom._id,
     author: tom.profile.name,
-    url: 'http://meteor.com',
+    content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 10 * 3600 * 1000),
     commentsCount: 0,
     upvoters: [], votes: 0
@@ -52,7 +52,7 @@ if (Posts.find().count() === 0) {
     title: 'The Meteor Book',
     userId: tom._id,
     author: tom.profile.name,
-    url: 'http://themeteorbook.com',
+    content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
     submitted: new Date(now - 12 * 3600 * 1000),
     commentsCount: 0,
     upvoters: [], votes: 0
@@ -63,7 +63,7 @@ if (Posts.find().count() === 0) {
       title: 'Test post #' + i,
       author: sacha.profile.name,
       userId: sacha._id,
-      url: 'http://google.com/?q=test-' + i,
+      content: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.i',
       submitted: new Date(now - i * 3600 * 1000 + 1),
       commentsCount: 0,
       upvoters: [], votes: 0
