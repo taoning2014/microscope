@@ -73,4 +73,43 @@ if (Posts.find().count() === 0) {
       downvoters: [], downvotes: 0
     });
   }
+
+  for (var i = 0; i < 5; i++) {
+    Groups.insert({
+      userId: sacha._id,
+      groupName: "Test Regular Group: " + i,
+      createdAt: new Date(now - 12 * 3600 * 1000 * i),
+      memberCount: 2,
+      members: [sacha._id, tom._id],
+      isPrivate: false,
+      isPublic: true,
+      isFeatured: false
+    });
+  }
+
+  for (var i = 0; i < 2; i++) {
+    Groups.insert({
+      userId: tom._id,
+      groupName: "Test Private Group: " + i,
+      createdAt: new Date(now - 12 * 3600 * 1000 * i),
+      memberCount: 1,
+      members: [tom._id],
+      isPrivate: true,
+      isPublic: true,
+      isFeatured: false
+    });
+  }
+
+  for (var i = 0; i < 2; i++) {
+    Groups.insert({
+      userId: sacha._id,
+      groupName: "Test Featured Group: " + i,
+      createdAt: new Date(now - 12 * 3600 * 1000 * i),
+      memberCount: 2,
+      members: [sacha._id, tom._id],
+      isPrivate: false,
+      isPublic: true,
+      isFeatured: true
+    });
+  }
 }

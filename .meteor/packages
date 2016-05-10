@@ -25,3 +25,6 @@ accounts-password
 session
 check
 audit-argument-checks
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
