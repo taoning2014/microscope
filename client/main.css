@@ -1,0 +1,62 @@
+#container-homepage{
+    font-family: Raleway;
+}
+#navbar-homepage {
+    width: auto;
+    margin: 0;
+    height: 50px;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    background-image: -webkit-linear-gradient(top, #a684bc 0%, #9caeda 100%);
+    background-image: linear-gradient(to bottom, #a684bc 0%, #9caeda 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffa684bc', endColorstr='#ff9caeda', GradientType=0);
+    color: #fff;
+}
+
+#navbar-brand-homepage{
+    color: #fff;
+    font-size: 26px;
+    text-align: left;
+    padding-left: 14px
+}
+
+#navigation ul li a {
+    color: #fff;
+}
+
+#navigation ul li a:hover {
+    color: #52B3D9;
+}
+
+#navigation ul li.active a {
+    color: #fff;
+}
+
+#navigation ul li.active a:hover {
+    color: #2B2B2B;
+}
+
+
+#navigation ul li.active a {
+    background-image: -webkit-linear-gradient(top, #95a5a6 0%, #9caeda 100%);
+    background-image: linear-gradient(to bottom, #95a5a6 0%, #9caeda 100%);
+}
+
+#btn-vote{
+    color: #333;
+    background: #fff;
+    border-color: #a684bc;
+}
+
+#btn-vote:hover{
+    color: #fff;
+    background: #9caeda;
+}
+
+#btn-vote.disabled{
+    color: #fff;
+    background: #a684bc;
+}
