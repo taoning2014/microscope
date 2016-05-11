@@ -9,8 +9,12 @@
   "env": {
     "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "meteor": true
 
+  },
+  "globals": {
+    "RouteController": false
   },
   "rules": {
     "new-cap": 1,
@@ -24,6 +28,7 @@
       2
     ],
     "space-before-function-paren": 0,
-    "dot-notation": 1
+    "dot-notation": 1,
+    "no-underscore-dangle": 1
   }
 }
