@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    "meteor"
+  ],
+  "extends": [
+    "airbnb-base/legacy",
+    "plugin:meteor/recommended"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+
+  },
+  "rules": {
+    "new-cap": 1,
+    "no-console": 0,
+    "func-names": 1,
+    "quotes": 0,
+    "no-param-reassign": 0,
+    "max-len": [
+      2,
+      120,
+      2
+    ],
+    "space-before-function-paren": 0,
+    "dot-notation": 1
+  }
+}

@@ -2,9 +2,21 @@
   "name": "microscope",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "commit": "git-cz"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "commitizen": "^2.8.1",
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-meteor": "^3.5.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
