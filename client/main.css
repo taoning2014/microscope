@@ -1,3 +1,7 @@
+body{
+    background: url("img/background.jpg") no-repeat fixed center;
+}
+
 a{
     color:#a684bc;
 }
