@@ -1,0 +1,15 @@
+<template name="groupCreate">
+  {{#autoForm collection="Groups" id="insertGroupCreateForm" type="insert"}}
+    <div>
+      <legend>Create a group</legend>
+      {{> afQuickField name='groupName'}}
+      {{> afQuickField name='discription' rows=6}}
+      {{> afQuickField name='picture'}}
+      {{> afQuickField name='members'}}
+      {{> afQuickField name='isPrivate'}}
+      {{> afQuickField name='isPublic'}}
+      {{> afQuickField name='isFeatured'}}
+    </div>
+    <button type="submit" class="btn btn-primary" id = "btn-vote">Create</button>
+  {{/autoForm}}
+</template>

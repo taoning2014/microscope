@@ -20,3 +20,12 @@ Meteor.publish('comments', function(postId) {
 Meteor.publish('notifications', function() {
   return Notifications.find({userId: this.userId, read: false});
 });
+
+Meteor.publish('groups', function() {
+  return Groups.find({});
+});
+
+Meteor.publish('singleGroup', function(id) {
+  check(id, String);
+  return Groups.find({'_id': id});
+});

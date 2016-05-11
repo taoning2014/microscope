@@ -1,0 +1,14 @@
+<template name="groupPage">
+        <div class="post col-lg-3 col-md-3 col-sm-3 col-xm-3 some-margin">
+            <div class="post-content">
+                <h3>{{groupName}}</h3>
+                <p class="lead">{{discription}}</p>
+                <p>
+                    {{pluralizeArray members "Member"}},
+                    created by {{userId}}
+                </p>
+                <a href="#" class="vote btn btn-default {{joinableClass}}" id = "btn-vote">Join now</a>
+                <a href="#" class="vote btn btn-default {{leavableClass}}" id = "btn-vote">Leave</a>
+            </div>
+        </div>
+</template>
